@@ -1,7 +1,6 @@
 import streamlit as st
 import math
 
-# === Константы ===
 GPUS = {
     "T4": {"vram": 16, "fp16_tflops": 65, "supports_fp8": False, "base_tps_8b_fp16": 20},
     "A10": {"vram": 24, "fp16_tflops": 125, "supports_fp8": True, "base_tps_8b_fp16": 42},
@@ -22,7 +21,6 @@ PRECISION_BYTES = {
     "INT4": 0.5
 }
 
-# === Расчёты ===
 def calculate_memory(parameters_b, precision_bytes, batch_size, context_length, num_layers):
     model_memory = (parameters_b * 1e9 * precision_bytes) / (1024 ** 3)
     kv_cache_memory = (batch_size * context_length * num_layers * 2 * precision_bytes) / (1024 ** 3)
@@ -78,7 +76,6 @@ def suggest_multi_gpu(total_memory, min_tps, precision, parameters_b):
 def estimate_latency(max_traffic, mean_tokens_per_query, tps):
     return (max_traffic * mean_tokens_per_query) / (tps * 8)
 
-# === Streamlit UI ===
 st.set_page_config(page_title="GPU калькулятор для LLM", page_icon="🧠")
 
 st.title("📊 Калькулятор оценки GPU для LLM")
