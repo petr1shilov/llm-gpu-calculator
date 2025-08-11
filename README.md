@@ -19,7 +19,7 @@ git clone [https://github.com/petr1shilov/llm-gpu-calculator](https://github.com
 cd llm-gpu-calculator
 ```
 2.**Запустите приложение**
-```bash
+```
 streamlit run Новая llm_gpu_app_full_v4.py
 ```
 
