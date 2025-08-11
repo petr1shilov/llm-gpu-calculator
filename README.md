@@ -17,8 +17,8 @@
 ```bash
 git clone https://github.com/petr1shilov/llm-gpu-calculator
 cd llm-gpu-calculator
-
-2. **Запустите приложение**
+```
+2.**Запустите приложение**
 streamlit run app.py
 
 3. **Структура проекта**
