@@ -15,12 +15,12 @@
 
 1. **Клонируйте репозиторий**
 ```bash
-git clone https://github.com/petr1shilov/llm-gpu-calculator
+git clone [https://github.com/petr1shilov/llm-gpu-calculator](https://github.com/petr1shilov/llm-gpu-calculator.git)
 cd llm-gpu-calculator
 ```
 2.**Запустите приложение**
 ```bash
-streamlit run app.py
+streamlit run Новая llm_gpu_app_full_v4.py
 ```
 
 3. **Структура проекта**
