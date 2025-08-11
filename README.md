@@ -19,16 +19,19 @@ git clone https://github.com/petr1shilov/llm-gpu-calculator
 cd llm-gpu-calculator
 ```
 2.**Запустите приложение**
+```bash
 streamlit run app.py
+```
 
 3. **Структура проекта**
+```bash
 llm-gpu-calculator/
 │
 ├── app.py            # Основное Streamlit-приложение
 ├── LICENSE.txt       # Лицензия (Proprietary – All Rights Reserved)
 ├── README.md         # Описание проекта
 └── requirements.txt  # Зависимости
-
+```
 
 Proprietary – All Rights Reserved
 © 2025 Шилов Петр. Все права защищены.
